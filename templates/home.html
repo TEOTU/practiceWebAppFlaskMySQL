@@ -9,13 +9,17 @@
 </head>
 <body>
 <div class="container">
-<h1 class="text-center mt-2 mb-4">Michael's careers</h1>
+<h1 class="text-center mt-2 mb-4">{{ company_name }} Careers</h1>
 
 <img class="img-fluid" id="banner" src="http://127.0.0.1:5000/static/header.jpg" alt="">
     <h2 class="text-center mt-2">about Michael</h2>
     <p class="lead">Something very great... blah, blah, blah...</p>
     <h2 class="text-center mt-2">Open positions</h2>
-    <p>TO DO, Show the jobs here</p>
+    <p>
+        {% for jobs in jobs %}
+        {% include 'jobitems.html' %}
+        {% endfor %}
+    </p>
     <button type="button" class="btn btn-primary">Contact me</button>
 <p class="text-center mt-0.5">Copyrights 2023, Michael</p>
 </div>

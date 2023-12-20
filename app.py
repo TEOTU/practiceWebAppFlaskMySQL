@@ -1,11 +1,32 @@
+'''
+About the project: It's just a practice thing for me to learn how websites are built.
+ Here I use:
+ Flask
+ HTML, CSS
+ BootStrapping
+ Dynamic Data using templates
+'''
 from flask import Flask, render_template
 
 app = Flask(__name__)
 
+JOBS = [
+    {
+        'id': 1,
+        'title': 'AI Scientist Engineer',
+        'location': 'Ukraine, Kiev',
+        'salary': 'Not needed'
+    },
+    {
+        'id': 2,
+        'title': 'Unemployed',
+        'location': 'The Earth',
+    }]
+
 
 @app.route("/")
 def hello_world():
-    return render_template('home.html')
+    return render_template('home.html', jobs=JOBS, company_name="Michael's")
 
 
 if __name__ == '__main__':
