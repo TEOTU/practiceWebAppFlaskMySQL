@@ -2,53 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Mishanin's first website</title>
-    <style>
-        h1 {
-            font-size: 40px;
-            font-family: "Roboto Light", fantasy;
-            font-weight: normal;
-            color: rgb(100, 100, 100);
-            text-align: center;
-        }
-        #banner{
-            width: 100%;
-            height: 360px;
-            object-fit: cover;
-        }
-        h2{
-            font-family: Roboto, fantasy;
-            font-size: 32px;
-            color: rgb(100, 100, 100);
-            text-align: center;
-            font-weight: normal;
-        }
-        .bodytext {
-            font-family: Roboto, fantasy;
-            color: rgb(80, 80, 80);
-        }
-        #container{
-            max-width: 700px;
-            margin: 0 auto 0 auto;
-        }
-    </style>
 </head>
 <body>
+<div class="container">
+<h1 class="text-center mt-2 mb-4">Michael's careers</h1>
 
-<h1>Michael's careers</h1>
-
-<img id="banner" src="http://127.0.0.1:5000/static/header.jpg" alt="">
-
-<div id="container">
-    <h2>about Michael</h2>
-    <p class="bodytext">Something very great... blah, blah, blah...</p>
-    <h2>Open positions</h2>
-    <p class="bodytext">TO DO, Show the jobs here</p>
+<img class="img-fluid" id="banner" src="http://127.0.0.1:5000/static/header.jpg" alt="">
+    <h2 class="text-center mt-2">about Michael</h2>
+    <p class="lead">Something very great... blah, blah, blah...</p>
+    <h2 class="text-center mt-2">Open positions</h2>
+    <p>TO DO, Show the jobs here</p>
+    <button type="button" class="btn btn-primary">Contact me</button>
+<p class="text-center mt-0.5">Copyrights 2023, Michael</p>
 </div>
-
-<div style="text-align: center">
-    <button>Contact me</button>
-</div>
-<p>Copyrights 2023, Michael</p>
 </body>
 </html>
